@@ -9,10 +9,10 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 250px;
-    height: 250px;
-    margin-top: -125px;
-    margin-left: -125px;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
     pointer-events: none;
 }
 .footer {
