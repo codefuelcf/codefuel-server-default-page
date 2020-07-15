@@ -10,6 +10,7 @@
     <!--CSS FILES-->
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css"></link>
+
 </head>
 <body>
 
@@ -18,8 +19,21 @@
 </div>
 
 <div class="footer">
-	<p>&copy; <?php echo date("Y"); ?> Codefuel. All rights reserved.</p>
+	<p>&copy; <span id="currentYear"></span> Codefuel. All rights reserved.</p>
 </div>
+
+<script>
+
+    window.addEventListener('load', function () {
+
+        const currentDate = new Date();
+
+        const currentYearSpan = document.getElementById('currentYear');
+        currentYearSpan.innerHTML = currentDate.getFullYear();
+
+    });
+    
+</script>
 
 </body>
 </html>
